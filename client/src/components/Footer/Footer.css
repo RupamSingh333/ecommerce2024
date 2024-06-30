@@ -1,0 +1,44 @@
+/* Footer style */
+.site-footer {
+    background-color: #151515;
+    color: #fff; /* White text color */
+    padding: 3.2rem;
+    text-align: center;
+    margin-top: 3rem; /* Add extra space between body and footer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+/* Copyright notice */
+.footer-info {
+    margin-top: 1rem;
+}
