@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect,useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { AuthContext } from "../store/auth";
 import { IoCartOutline } from "react-icons/io5";
@@ -32,9 +32,9 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-img">
-                  {authData.avatar ? (
+                  {authData.avtar ? (
                     <NavLink to="/user-profile">
-                      <img src={authData.avatar} alt="User Avatar" />
+                      <img src={authData.avtar} alt="User Avatar" />
                     </NavLink>
                   ) : (
                     <span>Profile</span>

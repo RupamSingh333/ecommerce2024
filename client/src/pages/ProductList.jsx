@@ -130,6 +130,7 @@ const ProductList = () => {
                     wrapperClass=""
                 />
             </div>
+            
             <table>
                 <thead>
                     <tr>

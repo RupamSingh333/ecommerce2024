@@ -26,7 +26,7 @@ const ContactList = () => {
         setCurrentPage(pageNumber);
     };
 
-    const deleteContact = (_id) => {
+    const deleteContact = async (_id) => {
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -55,6 +55,8 @@ const ContactList = () => {
                             timer: 1500
                         });
 
+                        // Update contactData state after successful deletion
+                        setContactData(prevData => prevData.filter(contact => contact._id !== _id));
 
                     } else {
                         const errorResponse = await response.json();
@@ -133,7 +135,7 @@ const ContactList = () => {
                     strokeWidth="3"
                     animationDuration="0.75"
                     ariaLabel="rotating-lines-loading"
-                    wrapperStyle={{}}
+                    wrapperStyle={{ margin: 'auto' }}
                     wrapperClass=""
                 />
             </div>
@@ -174,4 +176,4 @@ const ContactList = () => {
     )
 }
 
-export default ContactList
+export default ContactList;
